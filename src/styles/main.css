@@ -9,11 +9,40 @@ select,
 textarea {
 	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 1rem;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
+}
+
+#container {
+    margin: 1rem 5rem 0 5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.label {
+    font-size: 1.15rem;
+    font-weight: 900;
+}
+
+.letterBody {
+    min-height: 15rem;
+}
+
+.letter {
+    margin: 2rem 0;
 }
