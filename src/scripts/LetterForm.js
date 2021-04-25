@@ -24,7 +24,8 @@ mainContainer.addEventListener("click", clickEvent => {
         const letter = {
             sender: parseInt(author),
             recipient: parseInt(recipient),
-            content: body
+            content: body,
+            dateCreated: Date.now()
         }
 
         sendIt("letters", letter, false)

@@ -6,21 +6,28 @@ export const Letters = () => {
 
     let html = `
         ${
-            letters.map(
+            letters
+                .sort( (c,p) => p.id - c.id )
+                .map(
                 (letter) => {
                     const author = pals.find(p => p.id === letter.sender)
                     const recipient = pals.find(p => p.id === letter.recipient)
                     return `
                         <div class="letter" id="letter--${letter.id}">
-                            Dear ${recipient.name},
+                            <header class="letter__header">
+                                Dear ${recipient.name} (${recipient.email}),
+                            </header>
 
                             <div>
                                 ${letter.content}
                             </div>
 
-                            <div>
-                                Sincerely, ${author.name}
-                            </div>
+                            <footer>
+                                <p>Sincerely, ${author.name} (${author.email})</p>
+                                <p class="letter__delivered">Sent on ${new Date(letter.dateCreated).toLocaleDateString('en-US')}</p>
+                            </footer>
+
+
                         </div>
                     `
                 }

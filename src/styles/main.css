@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import "./letter.css";
 
 /*Typography
 --------------------------------------------------------------*/
@@ -41,8 +42,4 @@ h1,h2,h3,h4,h5,h6 {
 
 .letterBody {
     min-height: 15rem;
-}
-
-.letter {
-    margin: 2rem 0;
 }

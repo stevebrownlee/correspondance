@@ -1,0 +1,20 @@
+.letter {
+    margin: 2rem 0;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.letter:nth-child(odd) {
+    background-color: rgb(245, 250, 190);
+}
+
+.letter:nth-child(even) {
+    background-color: rgb(188, 230, 244);
+}
+
+.letter__header {
+    margin-bottom: 1rem;
+}
+
+.letter__delivered {
+    font-size: 0.75rem;
+}
