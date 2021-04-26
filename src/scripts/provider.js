@@ -10,11 +10,16 @@ const state = {
     lastLetterCreated: null
 }
 
+export const fetchLettersWithTopics = () => {
+    return fetch(`${API}/letters?_embed=lettertopics`)
+        .then(response => response.json())
+        .then(data => state.letters = data)
+}
 
 export const fetchIt = (resource) => {
     return fetch(`${API}/${resource}`)
         .then(response => response.json())
-        .then( data => state[resource] = data )
+        .then(data => state[resource] = data)
 }
 
 export const deleteIt = (resource, id) => {
@@ -25,7 +30,7 @@ export const deleteIt = (resource, id) => {
         .then(stateChanged)
 }
 
-export const sendIt = (resource, newState, broadcast=true) => {
+export const sendIt = (resource, newState, broadcast = true) => {
     const fetchOptions = {
         method: "POST",
         headers: {

@@ -16,5 +16,18 @@
 }
 
 .letter__delivered {
+    font-size: 0.85rem;
+}
+
+.letter__tag {
+    border-radius: 3rem;
+    background-color: bisque;
+    box-shadow: 0.15rem 0.15rem 0.25rem rgb(63, 63, 63);
+    padding: 0.5rem;
     font-size: 0.75rem;
+    border: 1px solid rgb(128, 112, 92);
+}
+
+.letter__tag:not(:first-of-type) {
+    margin: 0 0 0 1rem;
 }
