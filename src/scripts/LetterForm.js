@@ -1,4 +1,4 @@
-import { getIt, getLastLetter, sendIt } from "./provider.js"
+import { getIt, sendIt } from "./provider.js"
 import { stateChanged } from "./util.js"
 
 const mainContainer = document.querySelector("#container")
@@ -8,39 +8,17 @@ mainContainer.addEventListener("click", clickEvent => {
         const author = document.querySelector("#author").value
         const body = document.querySelector("#body").value
         const recipient = document.querySelector("#recipient").value
-
-        const topics = Array.from(document.getElementsByClassName("letterTopic"))
-        const chosenTopics = topics.reduce(
-            (group, current) => {
-                if (current.checked) {
-                    const [,topicId] = current.id.split("--")
-                    group.push(parseInt(topicId))
-                }
-                return group
-            },
-            []
-        )
+        const selectedTopic = document.querySelectorAll("input[name='topic']:checked")
 
         const letter = {
             sender: parseInt(author),
             recipient: parseInt(recipient),
             content: body,
-            dateCreated: Date.now()
+            dateCreated: Date.now(),
+            topicId: parseInt(selectedTopic[0].value)
         }
 
-        sendIt("letters", letter, false)
-            .then(
-                () => {
-                    const lastLetter = getLastLetter()
-                    for (const topic of chosenTopics) {
-                        sendIt("lettertopics", {
-                            letterId: lastLetter.id,
-                            topicId: topic
-                        }, false)
-                    }
-                }
-            )
-            .then(stateChanged)
+        sendIt("letters", letter)
     }
 })
 
@@ -69,7 +47,7 @@ export const Letter = () => {
             <div class="fieldGroup">
                 ${
                     topics.map(
-                        topic => `<input type="checkbox" class="letterTopic" id="topic--${topic.id}" />${topic.label}`
+                        topic => `<input type="radio" name="topic" class="letterTopic" value="${topic.id}" />${topic.label}`
                     ).join("")
                 }
             </div>

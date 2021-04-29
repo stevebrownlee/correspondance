@@ -22,6 +22,7 @@
       "sender": 1,
       "recipient": 3,
       "dateCreated": 1570000041780,
+      "topicId": 3,
       "content": "Qui veniam voluptatem cumque accusantium dolore iste laudantium sequi et. In eos cum incidunt quidem rerum. Repellat laborum cumque ut quia officia vel nihil sapiente sit. Eaque cumque eaque itaque cum illum. Dolor possimus et ipsum. Consectetur fugiat earum veritatis et. Possimus cupiditate blanditiis quis. Deleniti velit nesciunt assumenda consequuntur ducimus. Tenetur et occaecati fugiat et cum quam consequatur. Ut eaque veritatis et quae. Qui ullam porro consequatur facilis ut. Similique maxime vero modi illo deleniti. Voluptas libero vel. Omnis tempore eligendi error voluptas qui voluptas atque aut. Quos vitae quas incidunt molestias et."
     },
     {
@@ -29,6 +30,7 @@
       "sender": 3,
       "recipient": 2,
       "dateCreated": 1584323841780,
+      "topicId": 3,
       "content": "Mollit non occaecat qui nisi reprehenderit Lorem culpa irure qui culpa eu. Nostrud tempor officia velit incididunt exercitation ad sit labore reprehenderit. Lorem qui duis sunt est ex commodo id adipisicing laborum esse officia aute. Irure fugiat do cupidatat ut. Id dolor mollit esse pariatur eiusmod ad nostrud sunt duis."
     },
     {
@@ -36,6 +38,7 @@
       "sender": 2,
       "recipient": 1,
       "dateCreated": 1595333861780,
+      "topicId": 3,
       "content": "In necessitatibus dicta iste numquam. Quam dolor ut repellendus vero nostrum. Ut non fugit eligendi suscipit ducimus. Id molestias dicta officiis ex modi sit cupiditate. Tempore laborum eaque non hic facere fugiat. Temporibus quasi aspernatur ratione qui quisquam suscipit."
     },
     {
@@ -43,21 +46,32 @@
       "sender": 1,
       "recipient": 2,
       "dateCreated": 1606364041780,
+      "topicId": 3,
       "content": "Sed ea et quia omnis optio. Ducimus non quidem quasi nihil ut quas sapiente sit non. Vel temporibus debitis. Repellendus autem id quia corrupti voluptatem exercitationem aut. Eum quas deserunt pariatur excepturi incidunt aut repellat dignissimos ullam. Cum exercitationem ut. Dolores reiciendis incidunt. Ut enim corrupti et non molestiae."
-    },
-    {
-      "sender": 1,
-      "recipient": 2,
-      "content": "nviwjn. wj wvo vo m",
-      "id": 5,
-      "dateCreated": 1610000000000
     },
     {
       "sender": 2,
       "recipient": 3,
       "content": "Dolor iure vel tenetur. Quasi tempora debitis iure et. Mollitia non expedita magnam itaque. Necessitatibus omnis consequuntur libero qui perspiciatis voluptatem velit.\n \nDeleniti id quia totam doloribus. Quam et nam. Officiis quis vel voluptate odit quo voluptas quis eos. Minima amet veniam quaerat minus fugiat illo maxime. Quo quis et quod vel dolor.\n \nFugit saepe nam pariatur quod quas rerum autem. Ex eos expedita tenetur eos ea et est nobis. Sed dolor maxime eos odit praesentium. Tempore odit qui magni numquam. Sunt earum dolor.",
       "dateCreated": 1619365327540,
+      "topicId": 3,
       "id": 6
+    },
+    {
+      "sender": 1,
+      "recipient": 2,
+      "content": "Aut aperiam molestiae delectus eaque. Laborum sed et veritatis sit soluta. Sunt qui deserunt adipisci maxime reiciendis voluptas omnis. Cupiditate voluptas et illum tempora. Quasi exercitationem ut nulla accusamus quis.\n \nFugiat recusandae fugiat alias vel. Autem est quia veniam. Qui minima eaque eaque dignissimos ut occaecati ea.\n \nRem soluta doloribus unde vel ea blanditiis quos consequatur. Reprehenderit mollitia impedit. Nostrum doloribus suscipit iste molestiae aliquam. Repudiandae nihil sed.",
+      "dateCreated": 1619721821696,
+      "topicId": 3,
+      "id": 7
+    },
+    {
+      "sender": 1,
+      "recipient": 3,
+      "content": " gu3b hiubn ui3nb utun jbnb2fowhfjw v. i hijoi ji jj ijfpi jpqosjdljhguewthiog jfv f vipjfpqsjpfj pfj jv ipjv p vij vqq",
+      "dateCreated": 1619722456857,
+      "topicId": 2,
+      "id": 8
     }
   ],
   "topics": [
@@ -80,58 +94,6 @@
     {
       "id": 5,
       "label": "Condolences"
-    }
-  ],
-  "lettertopics": [
-    {
-      "id": 1,
-      "letterId": 1,
-      "topicId": 3
-    },
-    {
-      "id": 2,
-      "letterId": 1,
-      "topicId": 4
-    },
-    {
-      "letterId": 5,
-      "topicId": 1,
-      "id": 3
-    },
-    {
-      "letterId": 5,
-      "topicId": 3,
-      "id": 4
-    },
-    {
-      "letterId": 6,
-      "topicId": 3,
-      "id": 5
-    },
-    {
-      "letterId": 6,
-      "topicId": 4,
-      "id": 6
-    },
-    {
-      "letterId": 4,
-      "topicId": 5,
-      "id": 7
-    },
-    {
-      "letterId": 4,
-      "topicId": 3,
-      "id": 8
-    },
-    {
-      "letterId": 3,
-      "topicId": 2,
-      "id": 9
-    },
-    {
-      "letterId": 2,
-      "topicId": 1,
-      "id": 10
     }
   ]
 }
