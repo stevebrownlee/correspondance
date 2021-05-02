@@ -6,12 +6,11 @@ const state = {
     pals: [],
     letters: [],
     topics: [],
-    lettertopics: [],
-    lastLetterCreated: null
+    lettertopics: []
 }
 
 export const fetchLettersWithTopics = () => {
-    return fetch(`${API}/letters?_embed=lettertopics`)
+    return fetch(`${API}/letters?_expand=topic`)
         .then(response => response.json())
         .then(data => state.letters = data)
 }
@@ -49,10 +48,6 @@ export const sendIt = (resource, newState, broadcast = true) => {
                 stateChanged()
             }
         })
-}
-
-export const getLastLetter = () => {
-    return state.lastLetterCreated
 }
 
 export const getIt = (resource) => {

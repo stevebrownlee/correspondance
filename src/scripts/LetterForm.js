@@ -1,5 +1,4 @@
 import { getIt, sendIt } from "./provider.js"
-import { stateChanged } from "./util.js"
 
 const mainContainer = document.querySelector("#container")
 
